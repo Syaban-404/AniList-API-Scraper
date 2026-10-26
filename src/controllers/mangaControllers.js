@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { GET_MANGA_DETAILS } = require('../queries/anilistQuery');
+const { ANILIST_MANGA_QUERY } = require('../config/constants');
 
 const searchManga = async (req, res) => {
     const mangaTitle = req.query.title;
@@ -15,14 +15,14 @@ const searchManga = async (req, res) => {
     try {
         // 2. Request Data Anilist GraphQL
         const response = await axios({
-            url: 'https://anilist.co',
+            url: 'https://graphql.anilist.co',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
             },
             data: {
-                query: GET_MANGA_DETAILS,
+                query: ANILIST_MANGA_QUERY,
                 variables: { search: mangaTitle }
             }
         });
