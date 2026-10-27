@@ -1,8 +1,9 @@
 # AniList-API-Scraper
-[![Node.js v24.14.1]⚙️](https://nodejs.org)
-[![Express v5.3.0]⚙️](https://expressjs.com)
-[![Axios v1.20.0]⚙️](https://axios.rest)
-[![Cheerio v1.2.0]⚙️](https://cheerio.js.org)
+[Node.js v24.14.1]⚙️](https://nodejs.org)
+[Express v5.3.0]⚙️](https://expressjs.com)
+
+[Axios v1.20.0]⚙️](https://axios.rest)
+[Cheerio v1.2.0]⚙️](https://cheerio.js.org)
 
 A high-performance Manga API Scraper built with **Node.js** and **Express.js**. This application seamlessly interacts with the official **AniList GraphQL API** to fetch, filter, and deliver clean, structured Manga information ready for frontend consumption.
 
