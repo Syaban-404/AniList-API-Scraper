@@ -1,6 +1,6 @@
 # AniList-API-Scraper
 [Node.js v24.14.1]⚙️](https://nodejs.org)            
-[Express v5.3.0]⚙️](https://expressjs.com)
+[Express v5.3.0]⚙️](https://expressjs.com)          
 [Axios v1.20.0]⚙️](https://axios.rest)                
 [Cheerio v1.2.0]⚙️](https://cheerio.js.org)
 
