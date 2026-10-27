@@ -60,5 +60,5 @@ Fetches comprehensive data of a specific manga by its title.
 
 #### 📝 Example Request:
 ```text
-http://localhost:3000/api/manga?title=One Piece
+http://localhost:3000/api/search-manga?title=One Piece
 ```
