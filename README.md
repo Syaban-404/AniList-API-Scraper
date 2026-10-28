@@ -10,7 +10,7 @@ A high-performance Manga & Anime API Scraper built with **Node.js** and **Expres
 * 🔍 **Accurate API Search:** Retrieve detailed data information effortlessly using just a `title` query parameter.
 * 🧹 **Clean JSON Response:** Formats and filters the raw API data to deliver only essential fields (IDs, multilingual titles, high-res covers, and descriptions).
 * ⚙️ **GraphQL Integration:** Leverages Axios to handle robust and efficient POST requests directly to AniList's GraphQL endpoint.
-* 🛡️ **Robust Validation:** Built-in error handling for missing query parameters and non-existent manga queries.
+* 🛡️ **Robust Validation:** Built-in error handling for missing query parameters and non-existent data queries.
 
 ## 🛠️ Tech Stack & Dependencies
 * **Node.js** - Runtime Environment
