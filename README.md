@@ -4,10 +4,10 @@
 [Axios v1.20.0]⚙️](https://axios.rest)                
 [Cheerio v1.2.0]⚙️](https://cheerio.js.org)
 
-A high-performance Manga & Anime API Scraper built with **Node.js** and **Express.js**. This application seamlessly interacts with the official **AniList GraphQL API** to fetch, filter, and deliver clean, structured Manga information ready for frontend consumption.
+A high-performance Manga & Anime API Scraper built with **Node.js** and **Express.js**. This application seamlessly interacts with the official **AniList GraphQL API** to fetch, filter, and deliver clean, structured Manga or Anime information Are ready for frontend consumption.
 
 ## ✨ Main Feature
-* 🔍 **Accurate api Search:** Retrieve detailed data information effortlessly using just a `title` query parameter.
+* 🔍 **Accurate API Search:** Retrieve detailed data information effortlessly using just a `title` query parameter.
 * 🧹 **Clean JSON Response:** Formats and filters the raw API data to deliver only essential fields (IDs, multilingual titles, high-res covers, and descriptions).
 * ⚙️ **GraphQL Integration:** Leverages Axios to handle robust and efficient POST requests directly to AniList's GraphQL endpoint.
 * 🛡️ **Robust Validation:** Built-in error handling for missing query parameters and non-existent manga queries.
@@ -61,5 +61,7 @@ Fetches comprehensive data of a specific manga/anime by its title.
 #### 📝 Example Request:
 ```text
 http://localhost:3000/api/manga?title=One Piece
+```
+```text
 http://localhost:3000/api/anime?title=One Piece
 ```
