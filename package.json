@@ -1,5 +1,5 @@
 {
-  "name": "manga-scraper-api",
+  "name": "Anilist-scraper-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "license": "MIT",
+  "type": "module",
   "dependencies": {
     "axios": "^1.20.0",
     "cheerio": "^1.2.0",

@@ -1,6 +1,6 @@
-const ANILIST_MANGA_QUERY = `
-  query ($search: String) {
-    Media (search: $search, type: MANGA) {
+export const ANILIST_QUERY = `
+  query ($search: String, $type: MediaType) {
+    Media (search: $search, type: $type) {
       id
       title {
         romaji
@@ -10,9 +10,8 @@ const ANILIST_MANGA_QUERY = `
       coverImage {
         large
       }
+      type
       description
     }
   }
 `;
-
-module.exports = { ANILIST_MANGA_QUERY };

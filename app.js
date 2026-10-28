@@ -1,5 +1,6 @@
-const express = require('express');
-const mangaRoutes = require('./src/routes/mangaRoutes');
+import express from 'express';
+import apiRoutes from './src/routes/apiRoutes.js'; 
+
 
 const app = express();
 // Using dynamic port for deploy needed
@@ -10,7 +11,7 @@ app.use(express.json()); // allowed server read request JSON format
 app.use(express.urlencoded({ extended: true })); // allow URL-encoded body
 
 // 2. Routing Middleware
-app.use('/api', mangaRoutes);
+app.use('/api', apiRoutes);
 
 // 3. Global Route For Fallback (if endpoint not found)
 app.use((req, res) => {
@@ -22,7 +23,7 @@ app.use((req, res) => {
 
 // 4. Running Server
 app.listen(PORT, () => {
-    console.log(`🚀 Manga API Server is running on http://localhost:${PORT}`);
+    console.log(`🚀 Manga API Server is running on http://localhost:${PORT}/api/`);
 });
 
-module.exports = app; // Export for easier testing
+export default app;
